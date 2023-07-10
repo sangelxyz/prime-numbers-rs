@@ -65,3 +65,35 @@ func main() {
 	fmt.Println("Succ", finish.Sub(start))
 }
 
+
+
+// Improved Functions
+// GO
+func isPrime(num int) bool {
+	if num < 2 || num < 4 || num%2 == 0 {
+		return false
+	}
+	for i := 3; i*i <= num; i += 2 {
+		if num%i == 0 {
+			return false
+		}
+	}
+	return true
+}
+
+
+//Javascript
+function isPrime(num) { 
+  for (let i = 2; i < num / 2; i++) {
+    if (num < 2 || num < 4 || num % 2 == 0) {
+      return false
+    }
+    if (num % i == 0) {
+
+      return false;
+    }
+  } 
+  return true; 
+} 
+
+
