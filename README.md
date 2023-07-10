@@ -1,7 +1,8 @@
 Rewrote a go implementation in rust using std.
 
 Original.
-`
+
+```
 package main
 
 import (
@@ -65,9 +66,9 @@ func main() {
 	finish := time.Now()
 	fmt.Println("Succ", finish.Sub(start))
 }
-`
+```
 
-`
+```
 // Improved Functions
 // GO
 func isPrime(num int) bool {
@@ -81,9 +82,9 @@ func isPrime(num int) bool {
 	}
 	return true
 }
-`
+```
 
-`
+```
 //Javascript
 function isPrime(num) { 
   for (let i = 2; i < num / 2; i++) {
@@ -97,5 +98,5 @@ function isPrime(num) {
   } 
   return true; 
 } 
-`
+```
 
